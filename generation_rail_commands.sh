@@ -1,0 +1,9 @@
+# Generation of the app itself...
+rails new things_i_bought
+
+# Generation of the templates for "Purchase"...
+bin/rails generate scaffold purchase name:string cost:float
+
+# Execution of the db script to create tables associated to the "Purchase" model...
+bin/rake db:migrate
+
